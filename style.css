@@ -15,7 +15,22 @@ body {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
 
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.col-six {
+    grid-column: col-start / span 6;
+}
+
+.col-twelve {
+    grid-column: col-start / span 12;
+}
 
 #fa-calendar-alt {
     position: absolute;
@@ -25,38 +40,50 @@ body {
     color: #2F4858;
 }
 
-a {
-    text-decoration: none;
-}
-
-h2 {
-    color: #ff8149;
-}
-
 #fa-sun {
     color: #ff8149;
 }
 
-/* Form Styling */
+
 .card {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 80%;
 }
 
 .card-content {
     padding: 20px;
 }
 
-form {
-    display: grid;
-    grid-template-columns: repeat(12, [col-start] 1fr);
+.card-title {
+    margin-bottom: 12px;
+    font-size: 24px;
 }
 
-.row {
-    grid-column: col-start / span 12;
+.input-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.small-six {
-    grid-column: col-start / span 6;
+
+.input-field input {
+    border: none;
+    border-bottom: solid 1.5px #2F4858;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.input-field label {
+    display: block;
+    text-align: start;
+    text-indent: 8px;
+    font-size: 14px;
+    font-weight: normal !important;
+    margin: 10px 0px;
 }
 
 

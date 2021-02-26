@@ -11,16 +11,21 @@
 <body>
     <a id="fa-calendar-alt" href="#"><i class="fas fa-3x fa-calendar-alt"></i>
     <a id="fa-sun" href="#"><i class="fas fa-6x fa-sun"></i>
-        <h2>NEW DAY</h2>
+        <h2 id="logo-text">NEW DAY</h2>
     </a>
 
     <div class="card">
         <div class="card-content">
-            <span class="card-title">Add Meal / Food Item</span>
-            <div class="wrapper">
-                <div class="row">
-                    <div class="input-field col small-six">
-                        <input type="text" placeholder="Add Item" id="item-name">
+            <div class="row">
+                <span class="card-title col-twelve">Add Food / Meal Item</span>
+                <div class="input-wrap col-twelve">
+                    <div class="input-field col-six">
+                        <label for="food-item">Food</label>
+                        <input id="food" name="food-item" type="text" placeholder="Add Food" id="item-name">
+                    </div>
+                    <div class="input-field col-six calories">
+                        <label for="food-item">Calories</label>
+                        <input id="calories" name="food-item" type="text" placeholder="Add Calories" id="item-name">
                     </div>
                 </div>
             </div>
