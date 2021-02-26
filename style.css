@@ -1,1 +1,62 @@
-ECHO is on.
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+}
+
+
+
+#fa-calendar-alt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    color: #2F4858;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #ff8149;
+}
+
+#fa-sun {
+    color: #ff8149;
+}
+
+/* Form Styling */
+.card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.row {
+    grid-column: col-start / span 12;
+}
+
+.small-six {
+    grid-column: col-start / span 6;
+}
+
+
