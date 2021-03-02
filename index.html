@@ -9,32 +9,132 @@
     <title>The App</title>
 </head>
 <body>
-    <a id="fa-calendar-alt" href="#"><i class="fas fa-3x fa-calendar-alt"></i>
-    <a id="fa-sun" href="#"><i class="fas fa-6x fa-sun"></i>
-        <h2 id="logo-text">NEW DAY</h2>
-    </a>
+    <section id="top">
+        <div class="container">
+            <a id="fa-calendar-alt" href="#history-section"><i class="fas fa-2x fa-calendar-alt"></i>
+                <a id="fa-sun" href="#"><i class="fas fa-5x fa-sun"></i>
+                    <h3 id="logo-text">NEW DAY</h3>
+                </a>
+                <nav>
+                    <a href="#" class="btn nav-btn"><i class="btn-icons fas fa-weight"></i></i>Calories</a>
+                    <a href="#" class="btn nav-btn"><i class="btn-icons fas fa-dumbbell"></i>Push-Ups</a>
+                    <a href="#" class="btn nav-btn"><i class="btn-icons fas fa-shoe-prints"></i></i>Steps</a>
+                </nav>
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <span class="card-title col-twelve">Add Food / Meal Item
+                            <span class="total-calories" id="total-calories">Total: <span id="zero">0</span></span>
+                        </span>
+                        <div class="input-wrap col-twelve">
+                            <div class="input-field col-six">
+                                <label id="food-label" for="food-item">Food
+                                    <input id="item-name" class="inputs" name="food-item" type="text" placeholder="Add Food">
+                                </label>
+                            </div>
+                            <div class="input-field col-six calories">
+                                <label id="calories-label" for="calorie-amount">Calories
+                                    <input id="calories" class="inputs" name="calorie-amount" type="text" placeholder="Add Calories">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper col-twelve">
+                            <a id="add-meal-btn" class="btn" href="#"><i class="fas fa-plus btn-icons"></i><span>Add Meal</span></a>
+                            <a id="update-btn" class="btn hide" href="#"><i class="fas fa-edit btn-icons"></i><span>Update Meal</span></a>
+                            <a id="delete-btn" class="btn hide" href="#"><i class="fas fa-trash-alt btn-icons"></i><span>Delete Meal</span></a>
+                            <a id="back-btn" class="btn" href="#"><i class="fas fa-arrow-alt-circle-left btn-icons"></i><span>Back</span></a>
+                        </div>
+                    </div>
+                        <!-- Food List -->
+                    
+                    <!-- <ul id="food-list" class="col-12" >
+                        <li>
+                            <strong>Banana:</strong><em>100 Calories</em>
+                            <a href="#" class="secondary-content">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <strong>Banana:</strong><em>100 Calories</em>
+                            <a href="#" class="secondary-content">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <strong>Banana:</strong><em>100 Calories</em>
+                            <a href="#" class="secondary-content">
+                                <i class="fa fa-pencil"></i>
+                            </a>
+                        </li>
+                    </ul> -->
 
-    <div class="card">
-        <div class="card-content">
-            <div class="row">
-                <span class="card-title col-twelve">Add Food / Meal Item</span>
-                <div class="input-wrap col-twelve">
-                    <div class="input-field col-six">
-                        <label for="food-item">Food</label>
-                        <input id="food" name="food-item" type="text" placeholder="Add Food" id="item-name">
-                    </div>
-                    <div class="input-field col-six calories">
-                        <label for="food-item">Calories</label>
-                        <input id="calories" name="food-item" type="text" placeholder="Add Calories" id="item-name">
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-            
+        </section>
 
-    </div>
-    
+
+            <section id="history-section">
+                <div class="history-grid">
+                    <div class="card history-card">
+                        <div class="card-content">
+                            <p class="date">Date: <span id="history-date">2/27/2021</span></p>
+                            <p>Calories: <span id="history-calories-number">12,200</span></p>
+                            <p>Push Ups: <span id="history-push-ups-number">174</span></p>
+                            <p>Steps: <span id="history-steps-number">10,231</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p>Date: <span id="history-date">2/27/2021</span></p>
+                            <p>Calories: <span id="history-calories-number">12,200</span></p>
+                            <p>Push Ups: <span id="history-push-ups-number">174</span></p>
+                            <p>Steps: <span id="history-steps-number">10,231</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p>Date: <span id="history-date">2/27/2021</span></p>
+                            <p>Calories: <span id="history-calories-number">12,200</span></p>
+                            <p>Push Ups: <span id="history-push-ups-number">174</span></p>
+                            <p>Steps: <span id="history-steps-number">10,231</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p>Date: <span id="history-date">2/27/2021</span></p>
+                            <p>Calories: <span id="history-calories-number">12,200</span></p>
+                            <p>Push Ups: <span id="history-push-ups-number">174</span></p>
+                            <p>Steps: <span id="history-steps-number">10,231</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p>Date: <span id="history-date">2/27/2021</span></p>
+                            <p>Calories: <span id="history-calories-number">12,200</span></p>
+                            <p>Push Ups: <span id="history-push-ups-number">174</span></p>
+                            <p>Steps: <span id="history-steps-number">10,231</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p>Date: <span id="history-date">2/27/2021</span></p>
+                            <p>Calories: <span id="history-calories-number">12,200</span></p>
+                            <p>Push Ups: <span id="history-push-ups-number">174</span></p>
+                            <p>Steps: <span id="history-steps-number">10,231</span></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <p>Date: <span id="history-date">2/27/2021</span></p>
+                            <p>Calories: <span id="history-calories-number">12,200</span></p>
+                            <p>Push Ups: <span id="history-push-ups-number">174</span></p>
+                            <p>Steps: <span id="history-steps-number">10,231</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     <script src="script.js"></script>
 </body>
 </html>
