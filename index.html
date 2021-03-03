@@ -16,28 +16,30 @@
                     <h3 id="logo-text">NEW DAY</h3>
                 </a>
                 <nav>
-                    <a href="#" class="btn nav-btn"><i class="btn-icons fas fa-weight"></i></i>Calories</a>
-                    <a href="#" class="btn nav-btn"><i class="btn-icons fas fa-dumbbell"></i>Push-Ups</a>
-                    <a href="#" class="btn nav-btn"><i class="btn-icons fas fa-shoe-prints"></i></i>Steps</a>
+                    <a href="#" id="calories-btn" class="btn nav-btn calories-btn active"><i class="btn-icons fas fa-weight"></i></i>Calories</a>
+                    <a href="#" id="push-ups-btn" class="btn nav-btn push-ups-btn"><i class="btn-icons fas fa-dumbbell"></i>Push-Ups</a>
+                    <a href="#" id="steps-btn" class="btn nav-btn steps-btn"><i class="btn-icons fas fa-shoe-prints"></i></i>Steps</a>
                 </nav>
             <div class="card">
                 <div class="card-content">
-                    <div class="row">
+                    <!-- Calories Card -->
+                    <div id="calories-card" class="row cards">
                         <span class="card-title col-twelve">Add Food / Meal Item
-                            <span class="total-calories" id="total-calories">Total: <span id="zero">0</span></span>
+                            <span class="total-calories" id="total-calories">Total: <span id="calories-number">0</span></span>
                         </span>
                         <div class="input-wrap col-twelve">
                             <div class="input-field col-six">
-                                <label id="food-label" for="food-item">Food
-                                    <input id="item-name" class="inputs" name="food-item" type="text" placeholder="Add Food">
+                                <label id="food-name-label" for="food-name">Food
+                                    <input id="food-name" class="inputs" name="food-name" type="text" placeholder="Add Food">
                                 </label>
                             </div>
                             <div class="input-field col-six calories">
                                 <label id="calories-label" for="calorie-amount">Calories
-                                    <input id="calories" class="inputs" name="calorie-amount" type="text" placeholder="Add Calories">
+                                    <input id="calories-input" class="inputs" name="calorie-amount" type="number" placeholder="Add Calories">
                                 </label>
                             </div>
                         </div>
+                        <ul id="food-list" class="collection col-twelve"></ul>
                         <div class="btn-wrapper col-twelve">
                             <a id="add-meal-btn" class="btn" href="#"><i class="fas fa-plus btn-icons"></i><span>Add Meal</span></a>
                             <a id="update-btn" class="btn hide" href="#"><i class="fas fa-edit btn-icons"></i><span>Update Meal</span></a>
@@ -45,29 +47,44 @@
                             <a id="back-btn" class="btn" href="#"><i class="fas fa-arrow-alt-circle-left btn-icons"></i><span>Back</span></a>
                         </div>
                     </div>
-                        <!-- Food List -->
-                    
-                    <!-- <ul id="food-list" class="col-12" >
-                        <li>
-                            <strong>Banana:</strong><em>100 Calories</em>
-                            <a href="#" class="secondary-content">
-                                <i class="fa fa-pencil"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <strong>Banana:</strong><em>100 Calories</em>
-                            <a href="#" class="secondary-content">
-                                <i class="fa fa-pencil"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <strong>Banana:</strong><em>100 Calories</em>
-                            <a href="#" class="secondary-content">
-                                <i class="fa fa-pencil"></i>
-                            </a>
-                        </li>
-                    </ul> -->
 
+                    <!-- Push-Up Card -->
+                    <div id="push-ups-card" class="row hide cards">
+                        <span class="card-title col-twelve">Push-Ups
+                            <span class="total-push-ups" id="total-push-ups">Total: <span id="push-ups-number">0</span></span>
+                        </span>
+                        <div class="input-wrap col-twelve">
+                            <div class="input-field col-six">
+                                <label id="push-ups-label" for="push-ups-input">Reps
+                                    <input id="item-name" class="inputs" name="push-ups-input" type="number" placeholder="Enter Reps">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper col-twelve">
+                            <a id="enter-reps-btn" class="btn" href="#"><i class="fas fa-plus btn-icons"></i><span>Enter Reps</span></a>
+                            <a id="update-reps" class="btn hide" href="#"><i class="fas fa-edit btn-icons"></i><span>Update Meal</span></a>
+                            <a id="delete-btn" class="btn hide" href="#"><i class="fas fa-trash-alt btn-icons"></i><span>Delete Meal</span></a>
+                            <a id="back-btn" class="btn" href="#"><i class="fas fa-arrow-alt-circle-left btn-icons"></i><span>Back</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Steps Card -->
+                    <div id="steps-card" class="row hide cards">
+                        <span class="card-title col-twelve">Steps
+                            <span class="total-steps" id="total-steps">Total: <span id="steps-number">0</span></span>
+                        </span>
+                        <div class="input-wrap col-twelve">
+                            <div class="input-field col-six">
+                                <label id="steps-label" for="steps-input">Steps
+                                    <input id="steps-input" class="inputs" name="steps-input" type="number" placeholder="Enter Steps">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper col-twelve">
+                            <a id="enter-steps-btn" class="btn" href="#"><i class="fas fa-plus btn-icons"></i><span>Enter Steps</span></a>
+                            <a id="back-btn" class="btn" href="#"><i class="fas fa-arrow-alt-circle-left btn-icons"></i><span>Back</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
