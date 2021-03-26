@@ -129,6 +129,13 @@ const App = (function(ItemCtrl, UICtrl, StorageCtrl){
             UICtrl.clearEditState();
             // Fetch items from data structure
             const items = ItemCtrl.getItems();
+            // Check if any items
+            if(items.length === 0){
+                UICtrl.hideList();
+            } else {
+                            // Populate list with items
+            UICtrl.populateItemList(items);
+            }
             // Populate list with items
             UICtrl.populateItemList(items);
             // Get total calories

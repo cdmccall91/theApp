@@ -97,6 +97,9 @@ const UICtrl = (function(){
             document.querySelector(UISelectors.backBtn).style.display = 'inline';
             document.querySelector(UISelectors.addMealBtn).style.display = 'none';
         },
+        hideList: function(){
+            document.querySelector(UISelectors.foodList).style.display = 'none';
+        },
         getSelectors: function(){
             return UISelectors;
         }
